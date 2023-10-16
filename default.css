@@ -1,0 +1,201 @@
+/* CSS Browser Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0;	border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1.25;}
+ol, ul {margin: 1% 0 1% 2%; display: inline-block;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+/*  End CSS Browser Reset */
+@-ms-viewport {width: device-width;}
+@-o-viewport {width: device-width;}
+@viewport {width: device-width;}
+
+/* General */
+* {box-sizing: border-box;}
+body { background: #FFFFFF; font-family: sansationregular; color: #404040; font-size: 18px;}
+img, object, embed, video {	max-width: 100%; height: auto; width: auto;}
+button {background: none; border: 2px solid #fff; text-shadow: none; border-radius: 2px; font-size: 20px; color: #fff; padding: 5px 20px 5px 20px; margin: 25px auto; cursor: pointer;}
+button:hover {background-color: #fff; color: #2c3e50; }
+
+/* ClearFix */
+.group:after { content: ""; display: table; clear: both;}
+
+/* Font */
+@font-face {
+    font-family: 'sansationbold';
+    src: url('font/sansation-bold-webfont.eot');
+    src: url('font/sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sansation-bold-webfont.woff') format('woff'),
+         url('font/sansation-bold-webfont.ttf') format('truetype'),
+         url('font/sansation-bold-webfont.svg#sansationbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansation_lightlight';
+    src: url('font/sansation-light-webfont.eot');
+    src: url('font/sansation-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sansation-light-webfont.woff') format('woff'),
+         url('font/sansation-light-webfont.ttf') format('truetype'),
+         url('font/sansation-light-webfont.svg#sansation_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sansationregular';
+    src: url('font/sansation-regular-webfont.eot');
+    src: url('font/sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/sansation-regular-webfont.woff') format('woff'),
+         url('font/sansation-regular-webfont.ttf') format('truetype'),
+         url('font/sansation-regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {font-size: 42px; font-family: sansationbold;}
+h2 {font-size: 36px; line-height: 2; font-family: sansationbold;}
+h3 {font-size: 24px;}
+h4 {font-size: 18px; font-family: sansationbold;}
+h5 {font-size: 18px; font-family: sansationregular;}
+p {}
+a {color: #a4470e; text-decoration: none;}
+strong {font-family: sansationbold;}
+.left {text-align: left;}
+.right {text-align: right;}
+.center {text-align: center;}
+
+/* Layout */
+.section {width: 100%; padding: 20% 5% 20% 5%; margin: 0px; text-align: center;}
+.section:after { content: ""; display: table; clear: both;}
+.content {}
+
+
+/* Header */
+.header {padding: 0;}
+.header .logo {}
+.header .logo img {padding: 2%;}
+.header .nav {}
+.header .nav ul {margin-top: 0px; margin: 0px;}
+.header .nav li {display: inline-block; width: 24vw; padding: 10px; text-decoration: none; color: #404040; font-size: 20px;}
+
+/* Home */
+.home .banner {padding: 0 0 0 0; background: url('images/banner01_800w.jpg') no-repeat; background-size: contain; height: 55vw;}
+
+.home .services {}
+.home .services button {width: 80vw; padding: 15px; border-color: #2c3e50; color: #2c3e50;}
+.home .services button:hover {background-color: #2c3e50; color: #fff;}
+.home .services .copy {}
+.home .services .showcase {display: none;}
+
+.home .about {background-color: #2c3e50; color: #fff;}
+
+.home .sub_banner {padding: 0 0 0 0; background: url('images/banner02_800w.jpg') no-repeat; background-size: contain; height: 55vw;}
+
+.home .contact {background-color: #bdc3c7;}
+.home .contact button {width: 80vw; padding: 15px; border-color: #2c3e50; color: #2c3e50;}
+.home .contact button:hover {background-color: #2c3e50; color: #fff;}
+
+/* Services */
+.services .service_menu {padding: 0; color: #fff;}
+.services .service_menu li {display: inline-block; width: 49%; padding: 10vw 0 0 0; margin-bottom: 1%; color: #fff;}
+.services .service_menu li:hover {color: #a4470e; background-color: #404040;}
+.services .service_menu li h2 {vertical-align: central; font-size: 25px; line-height: 1;}
+.services .service_menu li.kitchens {background: url('images/services_kitchen_01_800w.jpg') no-repeat; background-size: contain; height: 27vw;}
+.services .service_menu li.counters {background: url('images/services_counter_01_800w.jpg') no-repeat; background-size: contain; height: 27vw;}
+.services .service_menu li.bathrooms {background: url('images//services_bathroom_01_800w.jpg') no-repeat; background-size: contain; height: 27vw;}
+.services .service_menu li.furniture {background: url('images/services_furniture_01_800w.jpg') no-repeat; background-size: contain; height: 27vw;}
+
+.services button {width: 80vw; padding: 15px; border-color: #2c3e50; color: #2c3e50;}
+.services button:hover {background-color: #2c3e50; color: #fff;}
+
+.services ul {margin-top: 2%;}
+.services li {display: inline-block;}
+.services li img {padding: 0px 0px 0px 0px;}
+
+.services .kitchens {}
+.services .counters {background-color: #cccccc;}
+.services .bathrooms {}
+.services .furniture {background-color: #cccccc;}
+
+/* Contact */
+.contact .banner {padding: 0 0 0 0; background: url('images/banner03_800w.jpg') no-repeat; background-size: contain; height: 55vw;}
+.contact .contact_info {padding-top: 5%;}
+
+/* Footer */
+.footer {background-color: #2c3e50; color: #fff;}
+
+/* Responsive Layout - Desktop */
+@media all and (min-width: 800px) {
+
+/* General */
+button {background: none; border: 2px solid #fff; text-shadow: none; border-radius: 2px; font-size: 32px; color: #fff; padding: 5px 20px 5px 20px; margin: 5% auto; cursor: pointer;}
+button:hover {background-color: #fff; color: #2c3e50; }
+img.right {width: 45%; margin-left: 2%; float: right; display: inline-block;}
+img.left {width: 45%; margin-right: 2%; float: left; display: inline-block;}
+
+/* Font */
+h1 {font-size: 110px; padding-bottom: 3%;}
+h2 {font-size: 92px; padding-bottom: 3%;}
+h3 {font-size: 52px;}
+h4 {font-size: 32px;}
+h5 {font-size: 32px;}
+p {font-size: 22px; font-family: sansation_lightlight;}
+
+/* Layout */
+.section { padding: 5% 0 5% 0;}
+.img_banner {padding: 0px; margin-bottom: -1%;}
+.content {max-width: 80vw; margin: auto;}
+
+/* Header */
+.header {padding: 0;}
+.header .logo {max-width: 20%; display: block; float: left;}
+.header .logo img {padding: 2%;}
+.header .nav {max-width: 70%; display: block; float: right; padding: 0;}
+.header .nav li {display: inline-block; width: auto; padding: 22px; text-decoration: none; color: #404040; font-size: 20px;}
+.header .nav li:hover {background-color: #2c3e50; color: #fff;}
+.header .nav li.current {background-color: #2c3e50; color: #fff;}
+
+/* Home */
+.home .banner {padding: 0 0 0 0; background: url('images/banner01_1920w.jpg') no-repeat; background-size: contain; height: 33.8vw;}
+
+.home .services {}
+.home .services button {width: auto; padding: 10px 40px 10px 40px; border-color: #2c3e50; color: #2c3e50;}
+.home .services .copy {display: inline-block; width: 50%; vertical-align: top; text-align: left;}
+.home .services .copy p {padding-top: 4%;}
+.home .services .showcase {display: inline-block; width: 49%;}
+.home .services .showcase li {width: 49%; display: inline-block; padding: 1%;}
+
+.home .about img {padding-bottom: 5%;}
+
+.home .sub_banner {padding: 0 0 0 0; background: url('images/banner02_1920w.jpg') no-repeat; background-size: contain; height: 20.8vw;}
+
+.home .contact button {width: auto; padding: 10px 40px 10px 40px; border-color: #2c3e50; color: #2c3e50;}
+
+/* Services */
+.services .banner {height: 40vh; padding-top: 10vh}
+
+.services .service_menu {padding: 0;}
+.services .service_menu li {display: inline-block; width: 24.5%; padding: 5% 0 0 0; margin-bottom: 0; color: #fff;}
+.services .service_menu li:hover {color: #a4470e;}
+.services .service_menu li h2 {vertical-align: central; font-size: 3.5vw; font-weight: 900;line-height: 1;}
+.services .service_menu li.kitchens {background: url('images/services_kitchen_01_800w.jpg') no-repeat; background-size: contain; height: 14vw; max-height: 450px;}
+.services .service_menu li.counters {background: url('images/services_counter_01_800w.jpg') no-repeat; background-size: contain; height: 14vw; max-height: 450px;}
+.services .service_menu li.bathrooms {background: url('images//services_bathroom_01_800w.jpg') no-repeat; background-size: contain; height: 14vw; max-height: 450px;}
+.services .service_menu li.furniture {background: url('images/services_furniture_01_800w.jpg') no-repeat; background-size: contain; height: 14vw; max-height: 450px;}
+
+.services button {width: auto; padding: 10px 40px 10px 40px; border-color: #2c3e50; color: #2c3e50;}
+
+.services .kitchens ul, .services .counters ul, .services .bathrooms ul, .services .furniture ul {margin-top: 2%; width: 102%; position: relative; left: -1%;}
+.services .kitchens li, .services .counters li, .services .bathrooms li, .services .furniture li  {display: inline-block; width: 31%; margin: 0 1% 0 1%;}
+
+/* Contact */
+.contact .banner {padding: 0 0 0 0; background: url('images/banner03_1920w.jpg') no-repeat; background-size: contain; height: 33.8vw;}
+
+/* Footer */
+.footer {}
+
+
+}
